@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // 1. 린트 에러 무시 (잔소리 끄기)
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // 2. 타입 에러 무시 (깐깐함 끄기)
   typescript: {
     ignoreBuildErrors: true,
   },
