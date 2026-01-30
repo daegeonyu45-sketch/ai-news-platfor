@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 문법 검사 무시 (필수)
+  // 1. 검사 기능 끄기 (기존)
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // 타입 에러 무시 (필수)
   typescript: {
     ignoreBuildErrors: true,
   },
+  // 2. 폰트 다운로드 에러 무시 (핵심!)
+  optimizeFonts: false,
 };
 
 export default nextConfig;
